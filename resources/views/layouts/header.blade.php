@@ -17,9 +17,13 @@
                 <input type="text" class="w-full bg-slate-100 px-2 outline-none" placeholder="Pesquise aqui">
             </div>
             <nav class="mr-auto hidden md:flex">
-                <a href="#"
+                <a href="/"
                     class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
-                    Aluguel
+                    Home
+                </a>
+                <a href="/register"
+                    class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
+                    Cadastrar casa
                 </a>
                 <a href="#"
                     class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
