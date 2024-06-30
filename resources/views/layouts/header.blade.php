@@ -25,14 +25,6 @@
                     class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
                     Cadastrar casa
                 </a>
-                <a href="#"
-                    class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
-                    Compras
-                </a>
-                <a href="#"
-                    class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
-                    Favoritos
-                </a>
             </nav>
             <div class="flex gap-3 items-center">
                 <button

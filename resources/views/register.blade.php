@@ -5,7 +5,7 @@
 @section('content')
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-4xl font-semibold">Cadastre a casa</h1>
-        <form class="mt-6" action="/views" method="post" enctype="multipart/form-data">
+        <form class="mt-6" action="{{route('house-store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div>
                 <label for="image" class="block text-gray-700 font-bold mb-2">Imagem da casa:</label>
@@ -30,7 +30,7 @@
                     required>
             </div>
             <div class="flex items-center justify-center mt-6">
-                <input type="submit" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Cadastrar">
+                <input type="submit" class="btn btn-primary cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Cadastrar">
             </div>
         </form>
     </div>
