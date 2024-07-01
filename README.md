@@ -9,7 +9,7 @@ No projeto você pode cadastrar as casas e inserir informações para todos obse
 # Tecnologias & Ferramentas
 Laravel - Utilizado para desenvolvimento Back-End <br />
 Blade - Utilizado para desenvolvimento da estrutura do Front-End <br />
-Tailwind - Utilizado para o estilização da estrutura do Front-End <br />
+Tailwind - Utilizado para estilização da estrutura do Front-End <br />
 Mysql - Utilizado para salvar toda a parte de dados da aplicação no database <br />
 ### Ferramentas
 Vscode - Utilizado para o desenvolvimento da aplicação <br />
