@@ -2,7 +2,7 @@
 
 # Projeto FullStack com laravel
 ### Projeto em desenvolvimento...
-O projeto foi com ideia pensada para fazer uma aplicação web moderna, utilizando Laravel e Blade.
+O projeto foi com ideia pensada para fazer uma aplicação web moderna, utilizando Laravel, Blade e Tailwind.
 A ideia central do projeto é criar um site de aluguel de casas (tipo Airbnb), onde você pode ver casas e escolher as casas que você deseja, e ver informações.
 No projeto você pode cadastrar as casas e inserir informações para todos observar, e tambem com adição de imagens, futuramente planejo implementar a lib jetstream para fazer a autenticação de usuarios, e conseguir cadastrar a casa apenas quem está logado no sistema.
 
