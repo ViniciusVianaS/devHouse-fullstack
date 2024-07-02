@@ -12,3 +12,5 @@ Route::get('/register', function () {
 });
 
 Route::post('/houses', [HouseController::class, 'store'])->name('house-store');
+
+Route::get('/', [HouseController::class, 'index'])->name('home-index');

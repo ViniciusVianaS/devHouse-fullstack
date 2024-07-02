@@ -36,4 +36,11 @@ class HouseController extends Controller
 
         return redirect('/');
     }
+
+    public function index () {
+        $houses = House::all();
+
+        return view('welcome', ['houses' => $houses]);
+        // return response()->json($houses);
+    }
 }

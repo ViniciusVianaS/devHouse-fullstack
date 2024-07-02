@@ -12,84 +12,32 @@
                 <span class="hidden md:block text-gray-600">Casas encontradas</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a href="#"
-                    class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
-                    <div>
-                        <div class="group overflow-hidden rounded-t-lg">
-                            <div class="absolute z-40 top-5 left-5">
-                                <div
-                                    class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
-                                    <i class="fa fa-map" style="font-size: 12px;"></i>
-                                    <p class="font-medium text-sm">Fortaleza - CE</p>
+                @foreach ($houses as $house)
+                    <a href="#"
+                        class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
+                        <div>
+                            <div class="group overflow-hidden rounded-t-lg">
+                                <div class="absolute z-40 top-5 left-5">
+                                    <div
+                                        class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
+                                        <i class="fa fa-map" style="font-size: 12px;"></i>
+                                        <p class="font-medium text-sm">{{$house->cidade}}</p>
+                                    </div>
+                                </div>
+                                <img src="/img/houses/{{$house->image}}" alt="{{$house->nome}}">
+                            </div>
+                            <div class="w-full flex flex-col gap-1 my-2">
+                                <h2 class="text-lg font-bold">{{$house->nome}}</h2>
+                                <div>
+                                    <p class="text-sm font-bold text-indigo-500 my-1">R$ {{$house->valor}}</p>
                                 </div>
                             </div>
-                            <img src="/img/casa1.png" alt="imagem da casa">
                         </div>
-                        <div class="w-full flex flex-col gap-1 my-2">
-                            <h2 class="text-lg font-bold">Casa de praia</h2>
-                            <div>
-                                <p class="text-sm font-bold text-indigo-500 my-1">5000 R$/mês</p>
-                            </div>
+                        <div class="mt-auto">
+                            <span class="font-medium text-sm">{{$house->descricao}}</span>
                         </div>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-medium text-sm">1200 metros -</span>
-                        <span class="font-medium text-sm">4 quartos -</span>
-                        <span class="font-medium text-sm">2 banheiros</span>
-                    </div>
-                </a>
-                <a href="#"
-                    class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
-                    <div>
-                        <div class="group overflow-hidden rounded-t-lg">
-                            <div class="absolute z-40 top-5 left-5">
-                                <div
-                                    class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
-                                    <i class="fa fa-map" style="font-size: 12px;"></i>
-                                    <p class="font-medium text-sm">Fortaleza - CE</p>
-                                </div>
-                            </div>
-                            <img src="/img/casa1.png" alt="imagem da casa">
-                        </div>
-                        <div class="w-full flex flex-col gap-1 my-2">
-                            <h2 class="text-lg font-bold">Casa de praia</h2>
-                            <div>
-                                <p class="text-sm font-bold text-indigo-500 my-1">5000 R$/mês</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-medium text-sm">1200 metros -</span>
-                        <span class="font-medium text-sm">4 quartos -</span>
-                        <span class="font-medium text-sm">2 banheiros</span>
-                    </div>
-                </a>
-                <a href="#"
-                    class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
-                    <div>
-                        <div class="group overflow-hidden rounded-t-lg">
-                            <div class="absolute z-40 top-5 left-5">
-                                <div
-                                    class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
-                                    <i class="fa fa-map" style="font-size: 12px;"></i>
-                                    <p class="font-medium text-sm">Fortaleza - CE</p>
-                                </div>
-                            </div>
-                            <img src="/img/casa1.png" alt="imagem da casa">
-                        </div>
-                        <div class="w-full flex flex-col gap-1 my-2">
-                            <h2 class="text-lg font-bold">Casa de praia</h2>
-                            <div>
-                                <p class="text-sm font-bold text-indigo-500 my-1">5000 R$/mês</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-medium text-sm">1200 metros -</span>
-                        <span class="font-medium text-sm">4 quartos -</span>
-                        <span class="font-medium text-sm">2 banheiros</span>
-                    </div>
-                </a>
+                    </a>
+                @endforeach
             </div>
         </aside>
     </main>
