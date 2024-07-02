@@ -11,6 +11,10 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/houses', function () {
+    return view('houses');
+});
+
 Route::post('/houses', [HouseController::class, 'store'])->name('house-store');
 
 Route::get('/', [HouseController::class, 'index'])->name('home-index');
