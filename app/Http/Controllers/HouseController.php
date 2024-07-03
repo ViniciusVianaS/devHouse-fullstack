@@ -44,9 +44,9 @@ class HouseController extends Controller
     }
     
     public function show($id) {
-        $houses = House::findOrFail($id);
+        $house = House::findOrFail($id);
 
-        return view('readHouse', ['houses' => $houses]);
+        return view('readHouse', ['house' => $house]);
     }
 }
 
