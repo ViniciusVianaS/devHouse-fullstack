@@ -41,6 +41,13 @@ class HouseController extends Controller
         $houses = House::all();
 
         return view('welcome', ['houses' => $houses]);
-        // return response()->json($houses);
+    }
+    
+    public function show($id) {
+        $houses = House::findOrFail($id);
+
+        return view('readHouse', ['houses' => $houses]);
     }
 }
+
+

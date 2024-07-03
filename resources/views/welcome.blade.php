@@ -13,7 +13,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @foreach ($houses as $house)
-                    <a href="/houses"
+                    <a href="/readHouse"
                         class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
                         <div>
                             <div class="group overflow-hidden rounded-t-lg">
