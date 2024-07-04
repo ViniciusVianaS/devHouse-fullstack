@@ -6,7 +6,7 @@
     @vite('resources/css/app.css')
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="flex flex-col items-center justify-center">
-            <div class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col cursor-pointer">
+            <div class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col">
                 <div class="group overflow-hidden rounded-t-lg">
                     <div class="absolute z-40 top-5 left-5">
                         <div
@@ -22,6 +22,17 @@
                     <div>
                         <p class="text-sm font-bold text-indigo-500 my-1">R$ {{ $house->valor }}</p>
                         <span class="font-medium text-sm">{{ $house->descricao }}</span>
+                    </div>
+                    <div class="mt-5 flex">
+                        <a class="bg-blue-700 p-2 text-white font-bold rounded hover:bg-blue-800 duration-300" 
+                        href="/edit/{{ $house->id }}">
+                            Editar
+                        </a>
+                        <form action="/houses/{{ $house->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="bg-red-700 ml-3 p-2 text-white font-bold rounded hover:bg-red-800 duration-300">deletar</button>
+                        </form>
                     </div>
                 </div>
             </div>

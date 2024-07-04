@@ -11,3 +11,6 @@ Route::get('/register', function () {
 
 Route::post('/houses', [HouseController::class, 'store'])->name('house-store');
 Route::get('/houses/{id}', [HouseController::class, 'show'])->name('house-show');
+Route::get('/edit/{id}', [HouseController::class, 'edit']);
+Route::put('/update/{id}', [HouseController::class, 'update'])->name('house-update');
+Route::delete('/houses/{id}', [HouseController::class, 'destroy']);

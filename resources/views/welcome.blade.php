@@ -24,7 +24,10 @@
                                         <p class="font-medium text-sm">{{$house->cidade}}</p>
                                     </div>
                                 </div>
-                                <img src="/img/houses/{{$house->image}}" alt="{{$house->nome}}">
+                                <img 
+                                 class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                                 src="/img/houses/{{$house->image}}" 
+                                 alt="{{$house->nome}}">
                             </div>
                             <div class="w-full flex flex-col gap-1 my-2">
                                 <h2 class="text-lg font-bold">{{$house->nome}}</h2>
