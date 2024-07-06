@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 # Projeto FullStack com laravel 💻
 ### Projeto em desenvolvimento...
 Fiz esse projeto a um tempo atrás, apenas front-end, mas decidi integrar o back-end. O projeto foi  pensado para fazer uma aplicação web moderna, utilizando Laravel, Blade e Tailwind.
