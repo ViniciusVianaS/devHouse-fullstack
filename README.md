@@ -40,7 +40,9 @@ php artisan migrate
 php artisan serve
 npm run dev
 ```
+# Imagem do projeto
 
+<img src='https://github.com/ViniciusPRO20/devHouse-fullstack/assets/115045547/4a2cb297-51d0-4995-90aa-35b2a986446a' />
 
 
 
