@@ -90,6 +90,14 @@ class HouseController extends Controller
         return redirect('/')->with('msg', 'Evento excluido com sucesso!');
 
     }
+
+    public function dashboard() {
+        $user = auth()->user();
+        
+        $houses = $user->houses;
+
+        return view('dashboard', ['houses' => $houses]);
+    }
 }
 
 
