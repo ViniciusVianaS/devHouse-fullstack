@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\House;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HouseController extends Controller
@@ -30,8 +31,8 @@ class HouseController extends Controller
             $house->image = $imageName;
         }
 
-        // $user = auth()->user();
-        // $house->user_id = $user->id;
+        $user = auth()->user();
+        $house->user_id = $user->id;
 
         $house->save();
 
@@ -49,7 +50,9 @@ class HouseController extends Controller
     {
         $house = House::findOrFail($id);
 
-        return view('readHouse', ['house' => $house]);
+        $houseOwner = User::where('id', $house->user_id)->first()->toArray();
+
+        return view('readHouse', ['house' => $house, 'houseOwner' => $houseOwner]);
     }
 
     public function edit($id)

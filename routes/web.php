@@ -7,7 +7,7 @@ Route::get('/', [HouseController::class, 'index'])->name('home-index');
 
 Route::get('/create', function () {
     return view('create');
-});
+})->middleware('auth');
 
 Route::post('/houses', [HouseController::class, 'store'])->name('house-store');
 Route::get('/houses/{id}', [HouseController::class, 'show'])->name('house-show');

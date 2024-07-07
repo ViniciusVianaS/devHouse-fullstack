@@ -48,12 +48,12 @@
                 @endauth
                 @guest
                     <a href="/login" title="Login"
-                        class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
+                        class="bg-sky-500 hover:bg-sky-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                         <span class="hidden md:flex">Login</span>
                         <i class="fa fa-user  md:ml-1" style="font-size:18px"></i>
                     </a>
                     <a href="/register" title="Cadastrar"
-                        class="bg-sky-500 hover:bg-sky-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
+                        class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                         <span class="hidden md:flex">Cadastrar-se</span>
                         <i class="fa fa-plus  md:ml-1" style="font-size:18px"></i>
                     </a>
