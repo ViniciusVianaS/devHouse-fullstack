@@ -50,7 +50,7 @@
     </div>
     </div>
 @else
-    <p>Você não tem casas cadastradas. Cadastrar casa? <a href="/create">Cadastrar</a></p>
+    <p>Você não tem casas cadastradas. Cadastrar casa? <a href="/create" class="text-sky-600 font-medium cursor-pointer">Cadastrar</a></p>
     @endif
     </div>
     </div>
