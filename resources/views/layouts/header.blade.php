@@ -41,7 +41,7 @@
                              onclick="event.preventDefault();
                              this.closest('form').submit();"
                              class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
-                                <span class="hidden md:flex">Sair</span>
+                                <span>Sair</span>
                             </a>
                         </form>
                     </li>
