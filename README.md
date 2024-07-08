@@ -1,11 +1,12 @@
 # Projeto FullStack com laravel 💻
 ### Projeto em desenvolvimento... 🚧
 Fiz esse projeto a um tempo atrás, apenas front-end, mas decidi integrar o back-end. O projeto foi  pensado para fazer uma aplicação web moderna, utilizando Laravel, Blade e Tailwind.
-A ideia central do projeto é criar um site de aluguel de casas (tipo Airbnb), onde você pode ver casas e escolher as casas que você deseja, e ver informações.
-No projeto você pode cadastrar as casas e inserir informações para todos observar, e tambem com adição de imagens, futuramente planejo implementar a lib jetstream para fazer a autenticação de usuarios, e conseguir cadastrar a casa apenas quem está logado no sistema. <br />
+A ideia central do projeto é criar um site de aluguel de casas (tipo Airbnb), onde você pode ver as casas, cadastrar, e ver informações.
+No projeto você pode criar o seu usuario, cadastrar sua casa e ver também quais casas você cadastrou no seu usuario, futuramente planejo implementar a lib React para fazer o Front-End. <br />
 Link do Front End do projeto: <a href="https://dev-house-blond.vercel.app/">Click Here</a>
 
 # Tecnologias & Ferramentas ⚙
+### Tecnologias
 Laravel - Utilizado para desenvolvimento Back-End <br />
 Blade - Utilizado para desenvolvimento da estrutura do Front-End <br />
 Tailwind - Utilizado para estilização da estrutura do Front-End <br />
