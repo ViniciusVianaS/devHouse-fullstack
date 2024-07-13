@@ -12,7 +12,7 @@ Route::get('/create', function () {
 Route::get('/dashboard', [HouseController::class, 'dashboard'])->middleware('auth');
 
 Route::post('/houses', [HouseController::class, 'store'])->name('house-store');
-Route::get('/houses/{id}', [HouseController::class, 'show'])->name('house-show')->middleware('auth');
+Route::get('/houses/{id}', [HouseController::class, 'show'])->name('house-show');
 Route::get('/edit/{id}', [HouseController::class, 'edit'])->middleware('auth');
 Route::put('/update/{id}', [HouseController::class, 'update'])->name('house-update')->middleware('auth');
 Route::delete('/houses/{id}', [HouseController::class, 'destroy']);
