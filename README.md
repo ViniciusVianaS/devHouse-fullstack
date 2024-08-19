@@ -15,7 +15,6 @@ Jetstream - Utilizado para realizar o cadastro de usuarios <br >
 Font Awesome - Utilizado para adicionar icons do projeto <br >
 ### Ferramentas
 Vscode - Utilizado para o desenvolvimento da aplicação <br />
-Xampp - Utilizado como servidor para o php e mysql <br />
 Dbeaver - Utilizado para manipulação do banco de dados <br />
 Git - Utilizado para fazer o versionamento do código <br />
 Github - Utilizado para hospedagem do código fonte
