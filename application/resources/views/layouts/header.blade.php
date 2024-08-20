@@ -39,17 +39,17 @@
                     <li class="list-none">
                         <form action="/logout" method="POST">
                             @csrf
-                            <a href="/logout" title="Sair" 
-                             onclick="event.preventDefault();
+                            <a href="/logout" title="Sair"
+                                onclick="event.preventDefault();
                              this.closest('form').submit();"
-                             class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
+                                class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                                 <span>Sair</span>
                             </a>
                         </form>
                     </li>
                 @endauth
                 @guest
-                    <a href="/login" title="Login" 
+                    <a href="/login" title="Login"
                         class="bg-sky-500 hover:bg-sky-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                         <span class="hidden md:flex">Login</span>
                         <i class="fa fa-user  md:ml-1" style="font-size:18px"></i>

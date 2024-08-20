@@ -15,15 +15,13 @@
                             <p class="font-medium text-sm">{{ $house->cidade }}</p>
                         </div>
                     </div>
-                    <img 
-                     class="max-w-[100%] rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300" 
-                     src="/img/houses/{{ $house->image }}" 
-                     alt="{{ $house->nome }}">
+                    <img class="max-w-[100%] rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                        src="/img/houses/{{ $house->image }}" alt="{{ $house->nome }}">
                 </div>
                 <div class="w-full flex flex-col gap-1 my-2">
                     <div class="flex">
                         <h2 class="text-lg font-bold">{{ $house->nome }} - </h2>
-                        <p class="text-sm font-bold my-1 ml-1 mt-[5px]">Proprietario: {{$houseOwner['name']}}</p>
+                        <p class="text-sm font-bold my-1 ml-1 mt-[5px]">Proprietario: {{ $houseOwner['name'] }}</p>
                     </div>
                     <div>
                         <p class="text-sm font-bold text-indigo-500 my-1">R$ {{ $house->valor }}</p>

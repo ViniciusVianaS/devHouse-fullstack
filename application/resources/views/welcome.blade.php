@@ -13,7 +13,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @foreach ($houses as $house)
-                    <a href="/houses/{{$house->id}}"
+                    <a href="/houses/{{ $house->id }}"
                         class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
                         <div>
                             <div class="group overflow-hidden rounded-t-lg">
@@ -21,23 +21,21 @@
                                     <div
                                         class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
                                         <i class="fa fa-map" style="font-size: 12px;"></i>
-                                        <p class="font-medium text-sm">{{$house->cidade}}</p>
+                                        <p class="font-medium text-sm">{{ $house->cidade }}</p>
                                     </div>
                                 </div>
-                                <img 
-                                 class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
-                                 src="/img/houses/{{$house->image}}" 
-                                 alt="{{$house->nome}}">
+                                <img class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                                    src="/img/houses/{{ $house->image }}" alt="{{ $house->nome }}">
                             </div>
                             <div class="w-full flex flex-col gap-1 my-2">
-                                <h2 class="text-lg font-bold">{{$house->nome}}</h2>
+                                <h2 class="text-lg font-bold">{{ $house->nome }}</h2>
                                 <div>
-                                    <p class="text-sm font-bold text-indigo-500 my-1">R$ {{$house->valor}}</p>
+                                    <p class="text-sm font-bold text-indigo-500 my-1">R$ {{ $house->valor }}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-auto">
-                            <span class="font-medium text-sm">{{$house->descricao}}</span>
+                            <span class="font-medium text-sm">{{ $house->descricao }}</span>
                         </div>
                     </a>
                 @endforeach
