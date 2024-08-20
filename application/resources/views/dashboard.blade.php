@@ -10,21 +10,18 @@
         <div>
             @if (count($houses) > 0)
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="flex flex-col items-center justify-center">
+                    @foreach ($houses as $house)
                         <div class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col">
                             <div class="group overflow-hidden rounded-t-lg">
                                 <div class="absolute z-40 top-5 left-5">
-                                    @foreach ($houses as $house)
-                                        <div
-                                            class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
-                                            <i class="fa fa-map" style="font-size: 12px;"></i>
-                                            <p class="font-medium text-sm">{{ $house->cidade }}</p>
-                                        </div>
+                                    <div
+                                        class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-2 px-3 py-1 rounded-full">
+                                        <i class="fa fa-map" style="font-size: 12px;"></i>
+                                        <p class="font-medium text-sm">{{ $house->cidade }}</p>
+                                    </div>
                                 </div>
-                                <img 
-                                 class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300" 
-                                 src="/img/houses/{{ $house->image }}" 
-                                 alt="{{ $house->nome }}">
+                                <img class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                                    src="/img/houses/{{ $house->image }}" alt="{{ $house->nome }}">
                             </div>
                             <div class="w-full flex flex-col gap-1 my-2">
                                 <div class="flex">
@@ -48,13 +45,13 @@
                                     </form>
                                 </div>
                             </div>
-            @endforeach
+                    @endforeach
+                </div>
         </div>
-    </div>
-    </div>
-@else
-    <p>Você não tem casas cadastradas. Cadastrar casa? <a href="/create" class="text-sky-600 font-medium cursor-pointer">Cadastrar</a></p>
-    @endif
+    @else
+        <p>Você não tem casas cadastradas. Cadastrar casa? <a href="/create"
+                class="text-sky-600 font-medium cursor-pointer">Cadastrar</a></p>
+        @endif
     </div>
     </div>
 @endsection

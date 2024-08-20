@@ -17,13 +17,15 @@
                 <input type="text" class="w-full bg-slate-100 px-2 border-none focus:outline-none"
                     placeholder="Pesquise aqui">
             </div>
-            <nav class="mr-auto ml-3">
+            <nav class="mr-auto ml-3 flex">
                 <a href="/" title="Home"
-                    class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
+                    class="text-gray-500 text-center font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300">
+                    <span class="hidden md:flex">Home</span>
                     <i class="fa fa-home" style="font-size: 26px;"></i>
                 </a>
                 <a href="/create" title="Cadastrar casa"
-                    class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300 mt-[2px] md:ml-4 ml-1">
+                    class="text-gray-500 font-medium text-center hover:text-black hover:bg-gray-100 p-2 rounded-lg duration-300 mt-[2px] md:ml-4 ml-1">
+                    <span class="hidden md:flex">Cadastrar</span>
                     <i class="fa fa-plus" style="font-size: 22px;"></i>
                 </a>
             </nav>
@@ -47,12 +49,12 @@
                     </li>
                 @endauth
                 @guest
-                    <a href="/login" title="Login"
+                    <a href="/login" title="Login" 
                         class="bg-sky-500 hover:bg-sky-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                         <span class="hidden md:flex">Login</span>
                         <i class="fa fa-user  md:ml-1" style="font-size:18px"></i>
                     </a>
-                    <a href="/register" title="Cadastrar"
+                    <a href="/register" title="Registrar"
                         class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium ml-3">
                         <span class="hidden md:flex">Cadastrar-se</span>
                         <i class="fa fa-plus  md:ml-1" style="font-size:18px"></i>
