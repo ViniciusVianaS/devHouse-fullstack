@@ -12,10 +12,9 @@ Blade - Utilizado para desenvolvimento da estrutura do Front-End <br />
 Tailwind - Utilizado para estilização da estrutura do Front-End <br />
 Mysql - Utilizado para salvar toda a parte de dados da aplicação no database <br />
 Jetstream - Utilizado para realizar o cadastro de usuarios <br >
-Font Awesome - Utilizado icons do projeto <br >
+Font Awesome - Utilizado para adicionar icons do projeto <br >
 ### Ferramentas
 Vscode - Utilizado para o desenvolvimento da aplicação <br />
-Xampp - Utilizado como servidor para o php e mysql <br />
 Dbeaver - Utilizado para manipulação do banco de dados <br />
 Git - Utilizado para fazer o versionamento do código <br />
 Github - Utilizado para hospedagem do código fonte
