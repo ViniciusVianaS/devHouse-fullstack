@@ -7,17 +7,17 @@ Link do Front End do projeto: <a href="https://dev-house-blond.vercel.app/">Clic
 
 # Tecnologias & Ferramentas ⚙
 ### Tecnologias | Bibliotecas
-Laravel - Utilizado para desenvolvimento Back-End <br />
-Blade - Utilizado para desenvolvimento da estrutura do Front-End <br />
-Tailwind - Utilizado para estilização da estrutura do Front-End <br />
-Mysql - Utilizado para salvar toda a parte de dados da aplicação no database <br />
-Jetstream - Utilizado para realizar o cadastro de usuarios <br >
-Font Awesome - Utilizado para adicionar icons do projeto <br >
+- Laravel - Utilizado para desenvolvimento Back-End
+- Blade - Utilizado para desenvolvimento da estrutura do Front-End
+- Tailwind - Utilizado para estilização da estrutura do Front-End
+- Mysql - Utilizado para salvar toda a parte de dados da aplicação no database
+- Jetstream - Utilizado para realizar o cadastro de usuarios
+- Font Awesome - Utilizado para adicionar icons do projeto
 ### Ferramentas
-Vscode - Utilizado para o desenvolvimento da aplicação <br />
-Dbeaver - Utilizado para manipulação do banco de dados <br />
-Git - Utilizado para fazer o versionamento do código <br />
-Github - Utilizado para hospedagem do código fonte
+- Vscode - Utilizado para o desenvolvimento da aplicação
+- Dbeaver - Utilizado para manipulação do banco de dados
+- Git - Utilizado para fazer o versionamento do código
+- Github - Utilizado para hospedagem do código fonte
 
 # Dependências do projeto 📚
 ### Passos:
