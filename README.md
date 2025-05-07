@@ -32,7 +32,7 @@ npm install
 # copy .env.example
 # and rename for .env
 # change the environment variables
-php artisan:key generate
+php artisan key:generate
 ```
 ```bash
 # run the migrations
